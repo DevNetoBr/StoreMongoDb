@@ -1,0 +1,10 @@
+@import "../components/card.css";
+
+.flyer-image {
+    width: 100%;
+}
+@media screen and (max-width: 600px) {
+    .flyer-image{
+        content: url('../../images/views/home/panfleto-responsivo.png');
+    }
+}

@@ -1,0 +1,46 @@
+:root {
+
+    /* default */
+    --primary-color: #6c268d;
+    --secondary-color: #37023a;
+    --success-color: #b134ff;
+    --info-color: #b2ff3e;
+    --gray-color: #373737;
+
+    /* dark */
+    --secondary-dark-color: #2e0330;
+    --primary-dark-color: #521f6a;
+    --gray-dark-color: #131212;
+
+    /* light */
+    --gray-light-color:#aaaaaa;
+
+    --border-radius: 5px;
+    --border-size: 1.5px;
+
+    /* spaçamentos */
+    --s1: 10px;
+    --s2: 20px;
+    --s3: 30px;
+    --s4: 40px;
+    --s5: 50px;
+}
+
+::selection {
+    background-color: var(--primary-color);
+    color: white
+}
+body::-webkit-scrollbar {
+    width: 7px;               /* width of the entire scrollbar */
+}
+  
+body::-webkit-scrollbar-track {
+    background: transparent;        /* color of the tracking area */
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);    /* color of the scroll thumb */
+    border-radius: 20px;     /* roundness of the scroll thumb */
+    border: 100px solid transparent; 
+}

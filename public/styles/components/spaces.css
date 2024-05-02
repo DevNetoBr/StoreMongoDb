@@ -1,0 +1,170 @@
+/* Margin total */
+.m-1 {
+    margin: var(--s1);
+}
+.m-2 {
+    margin: var(--s2);
+}
+.m-3 {
+    margin: var(--s3);
+}
+.m-4 {
+    margin: var(--s4);
+}
+.m-5 {
+    margin: var(--s5);
+}
+
+/* Margin X */
+.mx-1 {
+    margin-left: var(--s1);
+    margin-right: var(--s1);
+}
+
+.mx-2 {
+    margin-left: var(--s2);
+    margin-right: var(--s2);
+}
+
+.mx-3 {
+    margin-left: var(--s3);
+    margin-right: var(--s3);
+}
+
+.mx-4 {
+    margin-left: var(--s4);
+    margin-right: var(--s4);
+}
+
+.mx-5 {
+    margin-left: var(--s5);
+    margin-right: var(--s5);
+}
+
+/* Margin Y */
+.my-1 {
+    margin-top: var(--s1);
+    margin-bottom: var(--s1);
+}
+
+.my-2 {
+    margin-top: var(--s2);
+    margin-bottom: var(--s2);
+}
+
+.my-3 {
+    margin-top: var(--s3);
+    margin-bottom: var(--s3);
+}
+
+.my-4 {
+    margin-top: var(--s4);
+    margin-bottom: var(--s4);
+}
+
+.my-5 {
+    margin-top: var(--s5);
+    margin-bottom: var(--s5);
+}
+
+/* Margin Right */
+.mr-1 {
+    margin-right: var(--s1);
+}
+
+.mr-2 {
+    margin-right: var(--s2);
+}
+
+.mr-3 {
+    margin-right: var(--s3);
+}
+
+.mr-4 {
+    margin-right: var(--s4);
+}
+
+.mr-5 {
+    margin-right: var(--s5);
+}
+
+/* Margin Left */
+.ml-1 {
+    margin-left: var(--s1);
+}
+
+.ml-2 {
+    margin-left: var(--s2);
+}
+
+.ml-3 {
+    margin-left: var(--s3);
+}
+
+.ml-4 {
+    margin-left: var(--s4);
+}
+
+.ml-5 {
+    margin-left: var(--s5);
+}
+
+/* Margin Top */
+.mt-1 {
+    margin-top: var(--s1);
+}
+
+.mt-2 {
+    margin-top: var(--s2);
+}
+
+.mt-3 {
+    margin-top: var(--s3);
+}
+
+.mt-4 {
+    margin-top: var(--s4);
+}
+
+.mt-5 {
+    margin-top: var(--s5);
+}
+
+/* Margin Bottom */
+.mb-1 {
+    margin-bottom: var(--s1);
+}
+
+.mb-2 {
+    margin-bottom: var(--s2);
+}
+
+.mb-3 {
+    margin-bottom: var(--s3);
+}
+
+.mb-4 {
+    margin-bottom: var(--s4);
+}
+
+.mb-5 {
+    margin-bottom: var(--s5);
+}
+
+
+/* Padding total */
+.p-1 {
+    padding: var(--s1);
+}
+.p-2 {
+    padding: var(--s2);
+}
+.p-3 {
+    padding: var(--s3);
+}
+.p-4 {
+    padding: var(--s4);
+}
+.p-5 {
+    padding: var(--s5);
+}

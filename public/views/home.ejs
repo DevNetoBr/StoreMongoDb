@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <%- include('./blocs/head.ejs')%>
+    <link rel="stylesheet" href="../../styles/views/home.css"> 
+</head>
+
+<body class="bg-dark">
+    <%- include('./blocs/header.ejs')%>
+    <main>
+        <!-- Hero section com uma imagem de panfleto que muda conforme a responsividade do site -->
+        <section> 
+            <a href="/"><img src="images/views/home/panfleto.png" class="flyer-image"></a>
+        </section>
+        
+        <section class="mt-2 mx-1">
+            <h3 class="ml-5 text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" class="mr-1 bi bi-pin-angle-fill" viewBox="0 0 16 16">
+                    <path d="M9.828.722a.5.5 0 0 1 .354.146l4.95 4.95a.5.5 0 0 1 0 .707c-.48.48-1.072.588-1.503.588-.177 0-.335-.018-.46-.039l-3.134 3.134a6 6 0 0 1 .16 1.013c.046.702-.032 1.687-.72 2.375a.5.5 0 0 1-.707 0l-2.829-2.828-3.182 3.182c-.195.195-1.219.902-1.414.707s.512-1.22.707-1.414l3.182-3.182-2.828-2.829a.5.5 0 0 1 0-.707c.688-.688 1.673-.767 2.375-.72a6 6 0 0 1 1.013.16l3.134-3.133a3 3 0 0 1-.04-.461c0-.43.108-1.022.589-1.503a.5.5 0 0 1 .353-.146"/>
+                </svg>
+                CATEGORIAS
+            </h3>
+            <div class="d-flex justify-content-center mt-2">
+                <div class="card">
+                    <a href="/shirts"><img src="../images/views/home/shirts.png" class="card-image"></a>
+                    <p class="card-title">Camisas</p>
+                    <a class="btn btn-primary" href="/shirts">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" class="mr-1 bi bi-bag-heart-fill" viewBox="0 0 16 16">
+                            <path d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"/>
+                          </svg>
+                        Detalhes
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="/pants"><img class="card-image" src="../images/views/home/shirts.png" ></a>
+                    <p class="card-title">Calças</p>
+                    <a class="btn btn-primary" href="/pants">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" class="mr-1 bi bi-bag-heart-fill" viewBox="0 0 16 16">
+                            <path d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"/>
+                          </svg>
+                          Detalhes
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="/shoes"><img src="../images/views/home/shirts.png" class="card-image"></a>
+                    <p class="card-title">Sapatos</p>
+                    <a class="btn btn-primary" href="/shoes">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" class="mr-1 bi bi-bag-heart-fill" viewBox="0 0 16 16">
+                            <path d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"/>
+                          </svg>
+                        Detalhes
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="mt-2 mx-1">
+                <h3 class="ml-5 text-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" class="mr-1 bi bi-pin-angle-fill" viewBox="0 0 16 16">
+                    <path d="M9.828.722a.5.5 0 0 1 .354.146l4.95 4.95a.5.5 0 0 1 0 .707c-.48.48-1.072.588-1.503.588-.177 0-.335-.018-.46-.039l-3.134 3.134a6 6 0 0 1 .16 1.013c.046.702-.032 1.687-.72 2.375a.5.5 0 0 1-.707 0l-2.829-2.828-3.182 3.182c-.195.195-1.219.902-1.414.707s.512-1.22.707-1.414l3.182-3.182-2.828-2.829a.5.5 0 0 1 0-.707c.688-.688 1.673-.767 2.375-.72a6 6 0 0 1 1.013.16l3.134-3.133a3 3 0 0 1-.04-.461c0-.43.108-1.022.589-1.503a.5.5 0 0 1 .353-.146"/>
+                  </svg>
+                  NOVIDADES
+                </h3>
+                <div class="d-flex justify-content-center mt-2">
+                    <%for(product of data.products.slice(0,4)){%>
+                    <div class="card">
+                        <img src="<%=product.variants[0].image[0]%>" class="card-image">
+                        <p class="card-title"><%=product.name%></p>
+                            <p class="card-text">R$ <mark><%=product.price.toFixed(2).replace('.',',')%></mark> </p>
+                            <p class="card-description"><%=product.description%></p>
+                            <a href="/item/<%=product.id%>" class="btn btn-primary">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" class="mr-1 bi bi-bag-heart-fill" viewBox="0 0 16 16">
+                                    <path d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"/>
+                                  </svg>
+                                Detalhes
+                            </a>
+                    </div>
+                    <%}%>
+                </div>
+        </section>
+    </main>
+    <%- include('./blocs/footer.ejs')%>
+
+</body>
+
+</html>

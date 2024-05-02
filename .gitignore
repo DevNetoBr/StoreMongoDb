@@ -1,0 +1,5 @@
+# Arquivos de build e diretórios
+node_modules/
+
+# Arquivos específicos
+.env

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <%- include('./blocs/head.ejs')%>
+    <link rel="stylesheet" href="../../styles/views/item.css"> 
+</head>
+<body class="bg-dark">
+    <%- include('./blocs/header.ejs')%>
+    <main class="d-flex column justify-content-center">
+        <%if(data.productFound){%>
+            <section class="border m-2 mt-5 d-flex align-items-center">
+                <div class="div-item p-1 d-flex justify-content-space-start">
+                    <div class="div-img-item text-center rounded">
+                        <img src="<%=data.product.variants[data.query.variant].image[0]%>" class="rounded img-zoom">
+                    </div>
+                    <div class="info ml-2 d-flex column">
+                        <div clas="item-info">
+                            <h2 class="text-bold mt-1"><%=data.product.name%></h2>
+                            <p class="text-description"><%=data.product.description%></p>
+                        </div>
+                        <div class="item-price text-center">
+                            <p>R$ <mark><%=data.product.price.toFixed(2).replace('.',',')%></mark></p>
+                        </div>
+                        <div class="item-variants">
+                            <p>Cores</p>
+                            <div class="d-flex">
+                                <%for(variant of data.product.variants){%>
+                                    <a href="/item/<%=data.product.id%>?variant=<%=data.product.variants.indexOf(variant)%>" class="btn btn-<%=data.query.variant == data.product.variants.indexOf(variant) ?  'secondary' : 'primary'%> mr-1"><%=variant.type%></a>
+                                <%}%>
+                            </div>
+                        </div>
+
+                        <div class="item-buy d-flex justify-content-start mt-1">
+                            <a href="#" class="btn btn-primary mr-1 mb-1">Adicionar ao carrinho</a>
+                            <a href="#" class="btn btn-success">Comprar</a>
+                        </div>
+                        <!-- <div>
+                            <%for(img of data.product.variants[data.query.variant].image){%>
+                                <img class="img-zoom" src="<%=img%>" alt="">
+                            <%}%>
+                        </div> -->
+                    </div>
+                </div>
+                
+            </section>
+        <%} else {%>
+            <section class="m-5">
+                    <h2 class="text-center">
+                        <!-- SVG AQUi -->
+                        Produto não encontrado
+                    </h2>
+                </div>
+            </section>
+        <%}%>
+    </main>
+    <%- include('./blocs/footer.ejs')%>
+</body>
+</html>
